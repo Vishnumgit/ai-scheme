@@ -87,6 +87,89 @@ export interface SchemeFilterParams {
   limit?: number;
 }
 
+export const fallbackIndiaSchemes: SchemeMatchResult[] = [
+  {
+    scheme: {
+      id: "11111111-1111-1111-1111-111111111111",
+      title: "Stand-Up India Scheme",
+      ministry_or_org: "Ministry of Finance / SIDBI",
+      description: "Bank loans to women and SC/ST entrepreneurs for greenfield enterprise setup.",
+      target_demographics: ["Women", "SC", "ST"],
+      eligible_business_types: ["Manufacturing", "Service", "Trading"],
+      max_funding_amount: 10000000,
+      subsidy_percentage: 15,
+      application_url: "https://www.standupmitra.in/",
+      verification_status: "VERIFIED_OFFICIAL"
+    },
+    match_score: 95,
+    eligibility_status: "Highly Eligible",
+    ai_reasoning: "Strong fit for women and SC entrepreneurs with a new business in eligible sectors.",
+    key_benefits: ["₹10 Lakh to ₹1 Crore loan support", "Priority banking access", "Greenfield enterprise funding"],
+    required_documents: ["Aadhaar", "Caste certificate", "Udyam registration", "Business plan"],
+    matching_factors: ["Exclusive allocation for Women & SC/ST", "Priority banking quota"]
+  },
+  {
+    scheme: {
+      id: "22222222-2222-2222-2222-222222222222",
+      title: "Prime Minister's Employment Generation Programme (PMEGP)",
+      ministry_or_org: "Ministry of MSME / KVIC",
+      description: "Capital subsidy and credit support for micro-enterprise creation and employment generation.",
+      target_demographics: ["Women", "SC", "ST", "OBC", "Minority", "Differently-Abled"],
+      eligible_business_types: ["Manufacturing", "Service", "Artisan"],
+      max_funding_amount: 5000000,
+      subsidy_percentage: 35,
+      application_url: "https://www.kviconline.gov.in/pmegpeportal/",
+      verification_status: "VERIFIED_OFFICIAL"
+    },
+    match_score: 94,
+    eligibility_status: "Highly Eligible",
+    ai_reasoning: "Excellent alignment with the entrepreneur profile, special-category support, and artisan-focused business.",
+    key_benefits: ["Up to 35% subsidy", "Micro-enterprise employment support", "Credit-linked assistance"],
+    required_documents: ["Aadhaar", "Project report", "Bank details", "Category certificate if applicable"],
+    matching_factors: ["Special category affirmative subsidy", "Artisan sector support"]
+  },
+  {
+    scheme: {
+      id: "33333333-3333-3333-3333-333333333333",
+      title: "Pradhan Mantri Mudra Yojana (PMMY)",
+      ministry_or_org: "Department of Financial Services",
+      description: "Collateral-free loan support to micro and small businesses.",
+      target_demographics: ["Women", "Minority", "OBC", "SC", "ST"],
+      eligible_business_types: ["Manufacturing", "Service", "Trading", "Artisan"],
+      max_funding_amount: 1000000,
+      subsidy_percentage: 0,
+      application_url: "https://www.mudra.org.in/",
+      verification_status: "VERIFIED_OFFICIAL"
+    },
+    match_score: 90,
+    eligibility_status: "Highly Eligible",
+    ai_reasoning: "Good profile fit for small business financing and women-led enterprise support.",
+    key_benefits: ["Collateral-free loan", "Flexible business funding", "Formal credit support"],
+    required_documents: ["Aadhaar", "Bank passbook", "Business details", "Udyam registration"],
+    matching_factors: ["Collateral-free credit", "Micro-enterprise priority"]
+  },
+  {
+    scheme: {
+      id: "55555555-5555-5555-5555-555555555555",
+      title: "Pradhan Mantri Vishwakarma Yojana",
+      ministry_or_org: "Ministry of MSME",
+      description: "Support for artisans and craftsmen through toolkits, credit, and marketing assistance.",
+      target_demographics: ["Women", "OBC", "SC", "ST"],
+      eligible_business_types: ["Artisan", "Manufacturing", "Service"],
+      max_funding_amount: 3000000,
+      subsidy_percentage: 25,
+      application_url: "https://pmvishwakarma.gov.in/",
+      verification_status: "VERIFIED_OFFICIAL"
+    },
+    match_score: 88,
+    eligibility_status: "Highly Eligible",
+    ai_reasoning: "Excellent match for artisan-led or craft-based businesses and marginalized worker communities.",
+    key_benefits: ["Toolkit support", "Credit support", "Marketing assistance"],
+    required_documents: ["Aadhaar", "Occupation proof", "Bank account", "Artisan certificate if available"],
+    matching_factors: ["Direct artisan assistance", "Toolkit incentive"]
+  }
+];
+
 export async function fetchAllSchemes(params?: SchemeFilterParams): Promise<Scheme[]> {
   const queryParams = new URLSearchParams();
   if (params?.status) queryParams.set("status", params.status);

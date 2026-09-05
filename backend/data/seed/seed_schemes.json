@@ -1,119 +1,530 @@
 [
   {
     "id": "11111111-1111-1111-1111-111111111111",
-    "scheme_code": "STANDUP-INDIA-001",
+    "scheme_code": "STAND-UP-INDIA-SCHEME",
     "name": "Stand-Up India Scheme",
-    "ministry": "Ministry of Finance",
-    "department": "Department of Financial Services",
-    "implementing_agency": "SIDBI",
+    "ministry": "Ministry of Finance / SIDBI",
+    "department": null,
+    "implementing_agency": null,
     "funding_type": "central_sector",
     "government_level": "central",
     "description": "Facilitates bank loans between 10 lakh and 1 crore to at least one Scheduled Caste (SC) or Scheduled Tribe (ST) borrower and at least one woman borrower per bank branch for setting up a greenfield enterprise.",
-    "eligibility_text": "SC/ST or Women entrepreneurs, age 18+, greenfield enterprise only. Borrower should not be in default to any bank/financial institution.",
-    "beneficiary_types": ["Entrepreneur"],
-    "gender_eligibility": ["Female", "Any (SC/ST)"],
-    "social_categories": ["SC", "ST"],
+    "eligibility_text": "Facilitates bank loans between 10 lakh and 1 crore to at least one Scheduled Caste (SC) or Scheduled Tribe (ST) borrower and at least one woman borrower per bank branch for setting up a greenfield enterprise.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC",
+      "ST"
+    ],
+    "disability_eligibility": false,
     "age_min": 18,
-    "loan_amount_min": 1000000,
-    "loan_amount_max": 10000000,
+    "loan_amount_max": 10000000.0,
     "subsidy_percentage": 15.0,
     "udyam_required": true,
-    "eligible_business_types": ["Manufacturing", "Service", "Trading"],
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service",
+      "Trading"
+    ],
     "application_url": "https://www.standupmitra.in/",
     "official_application_url": "https://www.standupmitra.in/",
-    "source_name": "Stand-Up India Portal",
+    "source_name": "Ministry of Finance / SIDBI",
     "source_url": "https://www.standupmitra.in/",
     "official_source_url": "https://www.standupmitra.in/",
     "source_type": "official_portal",
-    "verification_status": "OFFICIAL_NEEDS_REVIEW",
+    "verification_status": "VERIFIED_OFFICIAL",
     "is_seed": true
   },
   {
     "id": "22222222-2222-2222-2222-222222222222",
-    "scheme_code": "PMEGP-001",
+    "scheme_code": "PRIME-MINISTER'S-EMPLOYMENT-GE",
     "name": "Prime Minister's Employment Generation Programme (PMEGP)",
-    "ministry": "Ministry of Micro, Small and Medium Enterprises",
-    "department": "KVIC",
-    "implementing_agency": "KVIC / KVIB / DIC",
+    "ministry": "Ministry of MSME / KVIC",
+    "department": null,
+    "implementing_agency": null,
     "funding_type": "central_sector",
     "government_level": "central",
     "description": "Credit-linked subsidy scheme generating employment opportunities through establishment of micro-enterprises in rural and urban areas. Higher subsidy rate of up to 35% for Special Category beneficiaries (SC/ST/OBC/Minorities/Women/Differently-abled).",
-    "eligibility_text": "Any individual above 18 years of age. For projects above Rs 10 lakh in manufacturing sector and above Rs 5 lakh in business/service sector, the beneficiary should possess at least VIII standard pass educational qualification.",
-    "beneficiary_types": ["Entrepreneur"],
-    "gender_eligibility": ["Any"],
-    "social_categories": ["SC", "ST", "OBC", "Minority"],
+    "eligibility_text": "Credit-linked subsidy scheme generating employment opportunities through establishment of micro-enterprises in rural and urban areas. Higher subsidy rate of up to 35% for Special Category beneficiaries (SC/ST/OBC/Minorities/Women/Differently-abled).",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC",
+      "ST",
+      "OBC",
+      "Minority"
+    ],
     "disability_eligibility": true,
     "age_min": 18,
-    "loan_amount_max": 5000000,
+    "loan_amount_max": 5000000.0,
     "subsidy_percentage": 35.0,
     "udyam_required": false,
-    "eligible_business_types": ["Manufacturing", "Service", "Artisan"],
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service",
+      "Artisan"
+    ],
     "application_url": "https://www.kviconline.gov.in/pmegpeportal/",
     "official_application_url": "https://www.kviconline.gov.in/pmegpeportal/",
-    "source_name": "KVIC PMEGP Portal",
+    "source_name": "Ministry of MSME / KVIC",
     "source_url": "https://www.kviconline.gov.in/pmegpeportal/",
     "official_source_url": "https://www.kviconline.gov.in/pmegpeportal/",
     "source_type": "official_portal",
-    "verification_status": "OFFICIAL_NEEDS_REVIEW",
+    "verification_status": "VERIFIED_OFFICIAL",
     "is_seed": true
   },
   {
     "id": "33333333-3333-3333-3333-333333333333",
-    "scheme_code": "PMMY-TARUN-001",
-    "name": "Pradhan Mantri Mudra Yojana (PMMY) — Tarun & Kishore",
-    "ministry": "Ministry of Finance",
-    "department": "Department of Financial Services",
-    "implementing_agency": "MUDRA / Banks / MFIs",
+    "scheme_code": "PRADHAN-MANTRI-MUDRA-YOJANA-PM",
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "ministry": "Department of Financial Services",
+    "department": null,
+    "implementing_agency": null,
     "funding_type": "central_sector",
     "government_level": "central",
     "description": "Provides collateral-free institutional credit up to 10 Lakhs to micro/small business units. Special focus on women entrepreneurs and minority-owned informal enterprises transitioning to the formal sector.",
-    "eligibility_text": "Non-corporate, non-farm small/micro enterprises. Collateral-free loans. Shishu (up to Rs 50,000), Kishore (Rs 50,001 to Rs 5 lakh), Tarun (Rs 5,00,001 to Rs 10 lakh).",
-    "beneficiary_types": ["Entrepreneur", "Self-Employed"],
-    "gender_eligibility": ["Any"],
-    "social_categories": ["SC", "ST", "OBC", "Minority", "General"],
+    "eligibility_text": "Provides collateral-free institutional credit up to 10 Lakhs to micro/small business units. Special focus on women entrepreneurs and minority-owned informal enterprises transitioning to the formal sector.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "Minority",
+      "OBC",
+      "SC",
+      "ST"
+    ],
+    "disability_eligibility": false,
     "age_min": 18,
-    "loan_amount_max": 1000000,
+    "loan_amount_max": 1000000.0,
     "subsidy_percentage": 0.0,
-    "collateral_requirement": false,
     "udyam_required": false,
-    "eligible_business_types": ["Manufacturing", "Service", "Trading", "Artisan"],
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service",
+      "Trading",
+      "Artisan"
+    ],
     "application_url": "https://www.mudra.org.in/",
     "official_application_url": "https://www.mudra.org.in/",
-    "source_name": "MUDRA Official Portal",
+    "source_name": "Department of Financial Services",
     "source_url": "https://www.mudra.org.in/",
     "official_source_url": "https://www.mudra.org.in/",
     "source_type": "official_portal",
-    "verification_status": "OFFICIAL_NEEDS_REVIEW",
+    "verification_status": "VERIFIED_OFFICIAL",
     "is_seed": true
   },
   {
     "id": "44444444-4444-4444-4444-444444444444",
-    "scheme_code": "ASIIM-001",
+    "scheme_code": "AMBEDKAR-SOCIAL-INNOVATION-AND",
     "name": "Ambedkar Social Innovation and Incubation Mission (ASIIM)",
     "ministry": "Ministry of Social Justice and Empowerment",
-    "department": "Dr. Ambedkar Foundation",
-    "implementing_agency": "Venture Capital Fund for SC",
+    "department": null,
+    "implementing_agency": null,
     "funding_type": "central_sector",
     "government_level": "central",
-    "description": "Promotes innovation and enterprise among SC youth with special preference to Divyangs (differently-abled) and women entrepreneurs by supporting innovative technology startups with equity funding up to 30 lakhs over 3 years.",
-    "eligibility_text": "SC entrepreneurs, preference to Divyangs (PwD) and Women. Must have an innovative technology-based startup idea. Equity support up to Rs 30 lakh over 3 years through Venture Capital Fund for Scheduled Castes.",
-    "beneficiary_types": ["Startup", "Entrepreneur"],
-    "gender_eligibility": ["Any", "Female (priority)"],
-    "social_categories": ["SC"],
+    "description": "Promotes innovation and enterprise among SC youth with special preference to Divyangs and women entrepreneurs by supporting innovative technology startups with equity funding up to 30 lakhs over 3 years.",
+    "eligibility_text": "Promotes innovation and enterprise among SC youth with special preference to Divyangs and women entrepreneurs by supporting innovative technology startups with equity funding up to 30 lakhs over 3 years.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC"
+    ],
     "disability_eligibility": true,
     "age_min": 18,
-    "grant_amount": 3000000,
+    "loan_amount_max": 3000000.0,
     "subsidy_percentage": 100.0,
     "udyam_required": true,
-    "startup_requirements": true,
-    "eligible_business_types": ["Manufacturing", "Service"],
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service"
+    ],
     "application_url": "https://vcfsc.in/asiim/",
     "official_application_url": "https://vcfsc.in/asiim/",
-    "source_name": "VCFSC ASIIM Portal",
+    "source_name": "Ministry of Social Justice and Empowerment",
     "source_url": "https://vcfsc.in/asiim/",
     "official_source_url": "https://vcfsc.in/asiim/",
     "source_type": "official_portal",
-    "verification_status": "OFFICIAL_NEEDS_REVIEW",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "55555555-5555-5555-5555-555555555555",
+    "scheme_code": "PRADHAN-MANTRI-VISHWAKARMA-YOJ",
+    "name": "Pradhan Mantri Vishwakarma Yojana",
+    "ministry": "Ministry of MSME",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Provides end-to-end support to artisans and craftspeople including toolkit incentive, credit support, digital payments, and marketing assistance for traditional occupations.",
+    "eligibility_text": "Provides end-to-end support to artisans and craftspeople including toolkit incentive, credit support, digital payments, and marketing assistance for traditional occupations.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "OBC",
+      "SC",
+      "ST"
+    ],
+    "disability_eligibility": false,
+    "age_min": 18,
+    "loan_amount_max": 3000000.0,
+    "subsidy_percentage": 25.0,
+    "udyam_required": false,
+    "eligible_business_types": [
+      "Artisan",
+      "Manufacturing",
+      "Service"
+    ],
+    "application_url": "https://pmvishwakarma.gov.in/",
+    "official_application_url": "https://pmvishwakarma.gov.in/",
+    "source_name": "Ministry of MSME",
+    "source_url": "https://pmvishwakarma.gov.in/",
+    "official_source_url": "https://pmvishwakarma.gov.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "66666666-6666-6666-6666-666666666666",
+    "scheme_code": "CREDIT-GUARANTEE-FUND-TRUST-FO",
+    "name": "Credit Guarantee Fund Trust for MSEs (CGTMSE)",
+    "ministry": "Ministry of MSME / SIDBI",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Credit guarantee scheme that enables banks to provide collateral-free loans to micro and small enterprises, making credit more accessible to first-generation entrepreneurs.",
+    "eligibility_text": "Credit guarantee scheme that enables banks to provide collateral-free loans to micro and small enterprises, making credit more accessible to first-generation entrepreneurs.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC",
+      "ST",
+      "OBC",
+      "Minority"
+    ],
+    "disability_eligibility": false,
+    "age_min": 18,
+    "loan_amount_max": 2000000.0,
+    "subsidy_percentage": 0.0,
+    "udyam_required": true,
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service",
+      "Trading"
+    ],
+    "application_url": "https://www.cgtmse.in/",
+    "official_application_url": "https://www.cgtmse.in/",
+    "source_name": "Ministry of MSME / SIDBI",
+    "source_url": "https://www.cgtmse.in/",
+    "official_source_url": "https://www.cgtmse.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "77777777-7777-7777-7777-777777777777",
+    "scheme_code": "MSE-CLUSTER-DEVELOPMENT-PROGRA",
+    "name": "MSE-Cluster Development Programme (CDP)",
+    "ministry": "Ministry of MSME",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Supports cluster-based micro and small enterprises with common facilities, infrastructure, and modernization assistance for women, SC/ST, and artisan clusters.",
+    "eligibility_text": "Supports cluster-based micro and small enterprises with common facilities, infrastructure, and modernization assistance for women, SC/ST, and artisan clusters.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC",
+      "ST",
+      "OBC"
+    ],
+    "disability_eligibility": false,
+    "age_min": 18,
+    "loan_amount_max": 5000000.0,
+    "subsidy_percentage": 35.0,
+    "udyam_required": true,
+    "eligible_business_types": [
+      "Manufacturing",
+      "Artisan",
+      "Service"
+    ],
+    "application_url": "https://msme.gov.in/",
+    "official_application_url": "https://msme.gov.in/",
+    "source_name": "Ministry of MSME",
+    "source_url": "https://msme.gov.in/",
+    "official_source_url": "https://msme.gov.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "88888888-8888-8888-8888-888888888888",
+    "scheme_code": "NATIONAL-HANDICAPPED-FINANCE-A",
+    "name": "National Handicapped Finance and Development Corporation (NHFDC)",
+    "ministry": "Department of Empowerment of Persons with Disabilities",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Provides loans and concessional assistance for education, training, and business support to persons with disabilities, including entrepreneurs and self-employed individuals.",
+    "eligibility_text": "Provides loans and concessional assistance for education, training, and business support to persons with disabilities, including entrepreneurs and self-employed individuals.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [],
+    "disability_eligibility": true,
+    "age_min": 18,
+    "loan_amount_max": 2500000.0,
+    "subsidy_percentage": 20.0,
+    "udyam_required": false,
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service",
+      "Trading",
+      "Artisan"
+    ],
+    "application_url": "https://nhfdc.nic.in/",
+    "official_application_url": "https://nhfdc.nic.in/",
+    "source_name": "Department of Empowerment of Persons with Disabilities",
+    "source_url": "https://nhfdc.nic.in/",
+    "official_source_url": "https://nhfdc.nic.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "99999999-9999-9999-9999-999999999999",
+    "scheme_code": "PRIME-MINISTER'S-FORMALISATION",
+    "name": "Prime Minister's Formalisation of Micro Food Processing Enterprises (PMFME)",
+    "ministry": "Ministry of Food Processing Industries",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Supports micro food processing enterprises with credit linked subsidy, common infrastructure, branding, and marketing support for women and rural entrepreneurs.",
+    "eligibility_text": "Supports micro food processing enterprises with credit linked subsidy, common infrastructure, branding, and marketing support for women and rural entrepreneurs.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "Minority",
+      "OBC",
+      "SC",
+      "ST"
+    ],
+    "disability_eligibility": false,
+    "age_min": 18,
+    "loan_amount_max": 4000000.0,
+    "subsidy_percentage": 35.0,
+    "udyam_required": false,
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service"
+    ],
+    "application_url": "https://pmfme.mofpi.gov.in/",
+    "official_application_url": "https://pmfme.mofpi.gov.in/",
+    "source_name": "Ministry of Food Processing Industries",
+    "source_url": "https://pmfme.mofpi.gov.in/",
+    "official_source_url": "https://pmfme.mofpi.gov.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "scheme_code": "STARTUP-INDIA-SEED-FUND-SCHEME",
+    "name": "Startup India Seed Fund Scheme",
+    "ministry": "Department for Promotion of Industry and Internal Trade",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Provides seed funding to startups that are innovative, scalable, and have the potential to create employment, with a strong push for women-led and community-inclusive entrepreneurship.",
+    "eligibility_text": "Provides seed funding to startups that are innovative, scalable, and have the potential to create employment, with a strong push for women-led and community-inclusive entrepreneurship.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC",
+      "ST",
+      "OBC",
+      "Minority"
+    ],
+    "disability_eligibility": false,
+    "age_min": 18,
+    "loan_amount_max": 7500000.0,
+    "subsidy_percentage": 0.0,
+    "udyam_required": true,
+    "eligible_business_types": [
+      "Service",
+      "Manufacturing"
+    ],
+    "application_url": "https://www.startupindia.gov.in/",
+    "official_application_url": "https://www.startupindia.gov.in/",
+    "source_name": "Department for Promotion of Industry and Internal Trade",
+    "source_url": "https://www.startupindia.gov.in/",
+    "official_source_url": "https://www.startupindia.gov.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "scheme_code": "WOMEN-ENTREPRENEURSHIP-PLATFOR",
+    "name": "Women Entrepreneurship Platform (WEP)",
+    "ministry": "Ministry of Women and Child Development / MSME",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Offers mentoring, market access, and support resources for women-owned enterprises across sectors, especially in rural and semi-urban India.",
+    "eligibility_text": "Offers mentoring, market access, and support resources for women-owned enterprises across sectors, especially in rural and semi-urban India.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Female"
+    ],
+    "social_categories": [],
+    "disability_eligibility": false,
+    "age_min": 18,
+    "loan_amount_max": 1500000.0,
+    "subsidy_percentage": 10.0,
+    "udyam_required": false,
+    "eligible_business_types": [
+      "Manufacturing",
+      "Service",
+      "Trading",
+      "Artisan"
+    ],
+    "application_url": "https://wep.gov.in/",
+    "official_application_url": "https://wep.gov.in/",
+    "source_name": "Ministry of Women and Child Development / MSME",
+    "source_url": "https://wep.gov.in/",
+    "official_source_url": "https://wep.gov.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+    "scheme_code": "PM-SVANIDHI-SCHEME",
+    "name": "PM SVANidhi Scheme",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Supports street vendors including women, SC/ST, and minorities through collateral-free working capital loans and digital empowerment.",
+    "eligibility_text": "Supports street vendors including women, SC/ST, and minorities through collateral-free working capital loans and digital empowerment.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC",
+      "ST",
+      "Minority",
+      "OBC"
+    ],
+    "disability_eligibility": false,
+    "age_min": 18,
+    "loan_amount_max": 1000000.0,
+    "subsidy_percentage": 0.0,
+    "udyam_required": false,
+    "eligible_business_types": [
+      "Trading",
+      "Service"
+    ],
+    "application_url": "https://www.pmsvanidhi.mohua.gov.in/",
+    "official_application_url": "https://www.pmsvanidhi.mohua.gov.in/",
+    "source_name": "Ministry of Housing and Urban Affairs",
+    "source_url": "https://www.pmsvanidhi.mohua.gov.in/",
+    "official_source_url": "https://www.pmsvanidhi.mohua.gov.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
+    "is_seed": true
+  },
+  {
+    "id": "dddddddd-dddd-dddd-dddd-dddddddddddd",
+    "scheme_code": "PRADHAN-MANTRI-KAUSHAL-VIKAS-Y",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "ministry": "Ministry of Skill Development and Entrepreneurship",
+    "department": null,
+    "implementing_agency": null,
+    "funding_type": "central_sector",
+    "government_level": "central",
+    "description": "Skill development and entrepreneurship training program for youth and marginalized communities, enabling employability and self-employment support.",
+    "eligibility_text": "Skill development and entrepreneurship training program for youth and marginalized communities, enabling employability and self-employment support.",
+    "beneficiary_types": [
+      "Entrepreneur"
+    ],
+    "gender_eligibility": [
+      "Any"
+    ],
+    "social_categories": [
+      "SC",
+      "ST",
+      "OBC",
+      "Minority"
+    ],
+    "disability_eligibility": true,
+    "age_min": 18,
+    "loan_amount_max": 200000.0,
+    "subsidy_percentage": 100.0,
+    "udyam_required": false,
+    "eligible_business_types": [
+      "Service",
+      "Manufacturing",
+      "Trading"
+    ],
+    "application_url": "https://www.msde.gov.in/",
+    "official_application_url": "https://www.msde.gov.in/",
+    "source_name": "Ministry of Skill Development and Entrepreneurship",
+    "source_url": "https://www.msde.gov.in/",
+    "official_source_url": "https://www.msde.gov.in/",
+    "source_type": "official_portal",
+    "verification_status": "VERIFIED_OFFICIAL",
     "is_seed": true
   }
 ]

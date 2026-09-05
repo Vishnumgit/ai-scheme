@@ -1,14 +1,27 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.api.v1 import api_router
+from app.ingestion.scheduler import start_scheduler, stop_scheduler
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    await start_scheduler()
+    yield
+    # Shutdown
+    await stop_scheduler()
+
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
     description="Backend API for AI-Driven Scheme Matching for Marginalized Entrepreneurs",
-    version="0.1.0",
+    version="0.2.0",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    lifespan=lifespan
 )
 
 # Set up CORS middleware

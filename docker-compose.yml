@@ -33,6 +33,12 @@ services:
       - SYNC_DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-scheme_db}
       - ENVIRONMENT=${ENVIRONMENT:-development}
       - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:3000}
+      - SEED_ON_STARTUP=${SEED_ON_STARTUP:-false}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - AI_PROVIDER=${AI_PROVIDER:-gemini}
+      - AI_EXPLANATION_ENABLED=${AI_EXPLANATION_ENABLED:-false}
+      - EMBEDDING_PROVIDER=${EMBEDDING_PROVIDER:-gemini}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-text-embedding-004}
     volumes:
       - ./backend:/app
     depends_on:

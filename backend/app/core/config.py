@@ -19,6 +19,18 @@ class Settings(BaseSettings):
         "postgresql://postgres:postgres@localhost:5432/scheme_db"
     )
 
+    # Ingestion & Seed Configuration
+    SEED_ON_STARTUP: bool = os.getenv("SEED_ON_STARTUP", "false").lower() in ("true", "1")
+
+    # AI & Embedding Providers
+    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "")
+    AI_PROVIDER: str = os.getenv("AI_PROVIDER", "gemini")
+    AI_EXPLANATION_ENABLED: bool = os.getenv("AI_EXPLANATION_ENABLED", "false").lower() in ("true", "1")
+
+    EMBEDDING_PROVIDER: str = os.getenv("EMBEDDING_PROVIDER", "gemini")  # gemini | openai | none
+    EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "text-embedding-004")
+
     # CORS Configuration
     CORS_ORIGINS: Union[List[str], str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
 

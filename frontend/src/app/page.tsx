@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { SchemeCard } from "../components/SchemeCard";
-import { EntrepreneurProfile, SchemeMatchResult, matchSchemes } from "../lib/api";
+import { EntrepreneurProfile, SchemeMatchResult, fallbackIndiaSchemes, matchSchemes } from "../lib/api";
 import { Language, translations } from "../lib/i18n";
 
 export default function HomePage() {
@@ -37,45 +37,7 @@ export default function HomePage() {
       setHasSearched(true);
     } catch (err) {
       console.error(err);
-      // Fallback offline sample data if backend isn't started yet
-      setMatches([
-        {
-          scheme: {
-            id: "22222222-2222-2222-2222-222222222222",
-            title: "Prime Minister's Employment Generation Programme (PMEGP)",
-            ministry_or_org: "Ministry of MSME / KVIC",
-            description: "Credit-linked subsidy scheme generating micro-enterprise employment. Up to 35% capital subsidy for Special Category (Women / SC / ST / Minorities / Differently-Abled).",
-            target_demographics: ["Women", "SC", "ST", "OBC", "Minority", "Differently-Abled"],
-            eligible_business_types: ["Manufacturing", "Service", "Artisan"],
-            max_funding_amount: 5000000,
-            subsidy_percentage: 35,
-            application_url: "https://www.kviconline.gov.in/pmegpeportal/"
-          },
-          match_score: 95.0,
-          eligibility_status: "Highly Eligible",
-          ai_reasoning: "Exceptional alignment: Applicant qualifies for special category subsidy benefits as a Woman and SC artisan entrepreneur.",
-          key_benefits: ["Government Capital Subsidy up to 35%", "Loan limit up to ₹50,00,000", "Collateral-free credit support"],
-          required_documents: ["Aadhaar Card", "Bank Passbook", "SC Community Certificate", "Udyam Registration Certificate"]
-        },
-        {
-          scheme: {
-            id: "11111111-1111-1111-1111-111111111111",
-            title: "Stand-Up India Scheme",
-            ministry_or_org: "Ministry of Finance / SIDBI",
-            description: "Bank loans between 10 Lakhs and 1 Crore to at least one SC/ST and at least one woman borrower per branch.",
-            target_demographics: ["Women", "SC", "ST"],
-            eligible_business_types: ["Manufacturing", "Service", "Trading"],
-            max_funding_amount: 10000000,
-            subsidy_percentage: 15,
-            application_url: "https://www.standupmitra.in/"
-          },
-          match_score: 90.0,
-          eligibility_status: "Highly Eligible",
-          ai_reasoning: "Direct priority allocation: Guaranteed loan quota reserved specifically for Women and Scheduled Caste founders.",
-          key_benefits: ["Loan from ₹10 Lakh to ₹1 Crore", "Margin money support up to 15%", "Working capital overdraft"],
-          required_documents: ["Aadhaar Card", "Caste Certificate", "Udyam Registration", "Detailed Project Report"]
-        }
-      ]);
+      setMatches(fallbackIndiaSchemes);
       setHasSearched(true);
     } finally {
       setLoading(false);

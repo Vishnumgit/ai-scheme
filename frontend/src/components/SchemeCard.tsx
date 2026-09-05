@@ -1,8 +1,10 @@
 import React from "react";
 import { SchemeMatchResult } from "../lib/api";
+import { translations, Language } from "../lib/i18n";
 
-export const SchemeCard: React.FC<{ match: SchemeMatchResult }> = ({ match }) => {
+export const SchemeCard: React.FC<{ match: SchemeMatchResult; language: Language }> = ({ match, language }) => {
   const { scheme, match_score, eligibility_status, ai_reasoning, key_benefits, required_documents } = match;
+  const t = translations[language];
 
   const getStatusColor = (status: string) => {
     if (status === "Highly Eligible") return "#16a34a"; // Green
@@ -53,12 +55,12 @@ export const SchemeCard: React.FC<{ match: SchemeMatchResult }> = ({ match }) =>
         fontSize: "0.9rem",
         color: "#1e40af"
       }}>
-        <strong>🤖 AI Recommendation Reason:</strong> {ai_reasoning}
+        <strong>{t.aiReason}</strong> {ai_reasoning}
       </div>
 
       {/* Benefits */}
       <div style={{ marginBottom: "1rem" }}>
-        <h4 style={{ margin: "0 0 0.5rem 0", fontSize: "0.9rem", color: "#475569" }}>Key Benefits & Subsidies:</h4>
+        <h4 style={{ margin: "0 0 0.5rem 0", fontSize: "0.9rem", color: "#475569" }}>{t.keyBenefits}</h4>
         <ul style={{ margin: 0, paddingLeft: "1.25rem", color: "#0f172a", fontSize: "0.9rem" }}>
           {key_benefits.map((benefit, i) => (
             <li key={i} style={{ marginBottom: "0.25rem" }}>{benefit}</li>
@@ -68,7 +70,7 @@ export const SchemeCard: React.FC<{ match: SchemeMatchResult }> = ({ match }) =>
 
       {/* Documents */}
       <div style={{ marginBottom: "1rem" }}>
-        <h4 style={{ margin: "0 0 0.5rem 0", fontSize: "0.9rem", color: "#475569" }}>Required Documents:</h4>
+        <h4 style={{ margin: "0 0 0.5rem 0", fontSize: "0.9rem", color: "#475569" }}>{t.requiredDocuments}</h4>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
           {required_documents.map((doc, i) => (
             <span key={i} style={{
@@ -103,7 +105,7 @@ export const SchemeCard: React.FC<{ match: SchemeMatchResult }> = ({ match }) =>
             fontWeight: "500"
           }}
         >
-          Apply on Official Portal ↗
+          {t.applyPortal}
         </a>
       )}
     </div>
